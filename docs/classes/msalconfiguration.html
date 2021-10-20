@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>KeyVaultManager | microsoft-identity-express</title>
+	<title>MsalConfiguration | microsoft-identity-express</title>
 	<meta name="description" content="Documentation for microsoft-identity-express">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,10 +53,10 @@
 					<a href="../modules.html">microsoft-identity-express</a>
 				</li>
 				<li>
-					<a href="keyvaultmanager.html">KeyVaultManager</a>
+					<a href="msalconfiguration.html">MsalConfiguration</a>
 				</li>
 			</ul>
-			<h1>Class KeyVaultManager</h1>
+			<h1>Class MsalConfiguration</h1>
 		</div>
 	</div>
 </header>
@@ -67,7 +67,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">KeyVaultManager</span>
+						<span class="target">MsalConfiguration</span>
 					</li>
 				</ul>
 			</section>
@@ -78,15 +78,13 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="keyvaultmanager.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="msalconfiguration.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="keyvaultmanager.html#getcertificatecredential" class="tsd-kind-icon">get<wbr>Certificate<wbr>Credential</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="keyvaultmanager.html#getcredentialfromkeyvault" class="tsd-kind-icon">get<wbr>Credential<wbr>From<wbr>Key<wbr>Vault</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="keyvaultmanager.html#getsecretcredential" class="tsd-kind-icon">get<wbr>Secret<wbr>Credential</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="msalconfiguration.html#getmsalconfiguration" class="tsd-kind-icon">get<wbr>Msal<wbr>Configuration</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,106 +96,48 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Key<wbr>Vault<wbr>Manager<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="keyvaultmanager.html" class="tsd-signature-type" data-tsd-kind="Class">KeyVaultManager</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Msal<wbr>Configuration<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="msalconfiguration.html" class="tsd-signature-type" data-tsd-kind="Class">MsalConfiguration</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="keyvaultmanager.html" class="tsd-signature-type" data-tsd-kind="Class">KeyVaultManager</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="msalconfiguration.html" class="tsd-signature-type" data-tsd-kind="Class">MsalConfiguration</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getcertificatecredential" class="tsd-anchor"></a>
-					<h3>get<wbr>Certificate<wbr>Credential</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Certificate<wbr>Credential<span class="tsd-signature-symbol">(</span>keyVaultCredential<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeyVaultCredential</span>, credential<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DefaultAzureCredential</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyVaultCertificate</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getmsalconfiguration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Msal<wbr>Configuration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Msal<wbr>Configuration<span class="tsd-signature-symbol">(</span>appSettings<span class="tsd-signature-symbol">: </span><a href="../modules.html#appsettings" class="tsd-signature-type" data-tsd-kind="Type alias">AppSettings</a>, persistenceManager<span class="tsd-signature-symbol">?: </span><a href="../interfaces/idistributedpersistence.html" class="tsd-signature-type" data-tsd-kind="Interface">IDistributedPersistence</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Configuration</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure-Samples/microsoft-identity-express/blob/e4db750/src/network/KeyVaultManager.ts#L74">network/KeyVaultManager.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/Azure-Samples/microsoft-identity-express/blob/e4db750/src/config/MsalConfiguration.ts#L35">config/MsalConfiguration.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Gets a certificate credential from Key Vault</p>
+									<p>Maps the custom configuration object to configuration
+									object expected by MSAL Node ConfidentialClientApplication class</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>keyVaultCredential: <span class="tsd-signature-type">KeyVaultCredential</span></h5>
+									<h5>appSettings: <a href="../modules.html#appsettings" class="tsd-signature-type" data-tsd-kind="Type alias">AppSettings</a></h5>
 								</li>
 								<li>
-									<h5>credential: <span class="tsd-signature-type">DefaultAzureCredential</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> persistenceManager: <a href="../interfaces/idistributedpersistence.html" class="tsd-signature-type" data-tsd-kind="Interface">IDistributedPersistence</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyVaultCertificate</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getcredentialfromkeyvault" class="tsd-anchor"></a>
-					<h3>get<wbr>Credential<wbr>From<wbr>Key<wbr>Vault</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Credential<wbr>From<wbr>Key<wbr>Vault<span class="tsd-signature-symbol">(</span>keyVaultCredential<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeyVaultCredential</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyVaultCredentialResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/Azure-Samples/microsoft-identity-express/blob/e4db750/src/network/KeyVaultManager.ts#L25">network/KeyVaultManager.ts:25</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Fetches credentials from Key Vault and updates appSettings</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>keyVaultCredential: <span class="tsd-signature-type">KeyVaultCredential</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyVaultCredentialResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getsecretcredential" class="tsd-anchor"></a>
-					<h3>get<wbr>Secret<wbr>Credential</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Secret<wbr>Credential<span class="tsd-signature-symbol">(</span>keyVaultCredential<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeyVaultCredential</span>, credential<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DefaultAzureCredential</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyVaultSecret</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/Azure-Samples/microsoft-identity-express/blob/e4db750/src/network/KeyVaultManager.ts#L94">network/KeyVaultManager.ts:94</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets a secret credential from Key Vault</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>keyVaultCredential: <span class="tsd-signature-type">KeyVaultCredential</span></h5>
-								</li>
-								<li>
-									<h5>credential: <span class="tsd-signature-type">DefaultAzureCredential</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyVaultSecret</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Configuration</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -225,30 +165,24 @@
 					<li class=" tsd-kind-class">
 						<a href="fetchmanager.html" class="tsd-kind-icon">Fetch<wbr>Manager</a>
 					</li>
+					<li class=" tsd-kind-class">
+						<a href="keyvaultmanager.html" class="tsd-kind-icon">Key<wbr>Vault<wbr>Manager</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="keyvaultmanager.html" class="tsd-kind-icon">Key<wbr>Vault<wbr>Manager</a>
+						<a href="msalconfiguration.html" class="tsd-kind-icon">Msal<wbr>Configuration</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="keyvaultmanager.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="msalconfiguration.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="keyvaultmanager.html#getcertificatecredential" class="tsd-kind-icon">get<wbr>Certificate<wbr>Credential</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="keyvaultmanager.html#getcredentialfromkeyvault" class="tsd-kind-icon">get<wbr>Credential<wbr>From<wbr>Key<wbr>Vault</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="keyvaultmanager.html#getsecretcredential" class="tsd-kind-icon">get<wbr>Secret<wbr>Credential</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="msalconfiguration.html#getmsalconfiguration" class="tsd-kind-icon">get<wbr>Msal<wbr>Configuration</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class">
-						<a href="msalconfiguration.html" class="tsd-kind-icon">Msal<wbr>Configuration</a>
-					</li>
 					<li class=" tsd-kind-class">
 						<a href="msalwebapiauthclient.html" class="tsd-kind-icon">Msal<wbr>Web<wbr>Api<wbr>Auth<wbr>Client</a>
 					</li>
